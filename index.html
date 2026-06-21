@@ -68,7 +68,7 @@
 
 	   <h1> Sayyed Kashaf Anisoddin </h1>
 	
-	   <img src="photo.jpg"  alt="kashaf" width="200" height="200" style="border-radius: 15px;">
+	   <img src="photo.jpg"  alt="kashaf" width="200" height="200" style="border-radius: 50%;">
 
 	   <p> "I am sayyed kashaf, BCS 2nd year student.Learning Web Development to get my first tech job." 
 	   </p>
@@ -106,11 +106,9 @@ window.onload = function() {
 
 // Contact button
 document.getElementById('contactBtn').onclick = function() {
-    let name = prompt('What is your name?');
-    if(name) {
-        document.getElementById('message').innerHTML = 'Hello ' + name + '! Kashaf will reply soon!';
+  window.location.href = 'mailto:sayyedkashaf007@gmail.com?subject=portfolio contact&body=Hi kashaf,';
     }
-}
+
 
 // Add button
 document.getElementById('addBtn').onclick = function() {
